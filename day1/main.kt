@@ -73,3 +73,41 @@ fun main() {
 
 
 
+fun petHungerFunction(petHunger :Int) : Int {
+    return petHunger - 20
+}
+
+fun petEnergyFunction(petEnergy :Int) : Int {
+    return petEnergy + 40
+}
+
+fun petHappinessFunction(petHappiness  :Int) : Int {
+    return petHappiness + 30
+}
+
+fun displayStatus(petHunger :Int, petEnergy :Int,petHappiness  :Int ){
+    println("Hunger: $petHunger")
+    println("Energy: $petEnergy")
+    println("Happiness: $petHappiness")
+}
+
+fun main() {
+    val petHunger = 50
+    val petEnergy = 70
+    val petHappiness = 60
+
+    val petHungerResult = petHungerFunction(petHunger)
+    val petEnergyResult = petEnergyFunction(petEnergy)
+    val petHappinessResult = petHappinessFunction(petHappiness)
+
+    displayStatus(petHungerResult,petEnergyResult,petHappinessResult)
+
+}
+
+fun main(){
+   val list = mutableListOf("Hello", "world","What")
+   val random = list.random()
+   println(random)
+   println(random.startsWith("Hello"))
+}
+
